@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head lang="en">
+    <title>Palindrome Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Palindrome Checker" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Cito's Palindrome Checker</h1>
+    <p>See if a word or phrase is a palindrome :D</p>
+    <main>
+        <div class="container">
+            <p>Go ahead and type some text!</p>
+            <div class="form-container">
+                <input
+                    placeholder="insert text"
+                    id="text-input"
+                    type="text"
+                    required
+                    minlength="1"
+                />
+                <button onclick="checkIfPalindrome()" id="check-btn">
+                    CHECK
+                </button>
+            </div>
+            <div class="result-container"><span id="result"></span></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
